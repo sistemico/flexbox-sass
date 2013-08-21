@@ -30,9 +30,8 @@ $flex-box-2012:
 
 // Custom shorthand notation for flex containers
 @mixin flex-container($flow: null, $main-axis-align: null, $cross-axis-align: null, $inline: false) {
-		
 	@include display-flex($inline);
-		
+
 	@if $flow != null {
 		@include flex-flow($flow);
 	}
